@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+import {useEffect} from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { getPhoto} from "../../actions/adminActions";
 import {Link} from 'react-router-dom';

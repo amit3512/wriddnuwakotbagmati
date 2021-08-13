@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { addStaff, updateStaff } from '../../actions/adminActions';
 import axios from 'axios';
 import {Redirect} from 'react-router-dom';
+import { serverurl } from '../../config';
 
 
 function Staff(props) {
@@ -79,7 +80,7 @@ const handleUpdate = (e) => {
 const getStaffDetails=()=>{
   const id =props.match.params.id;
 
-  axios.get(`/admin/staffs/${id}`).then((res)=>{
+  axios.get(`${serverurl}/admin/staffs/${id}`).then((res)=>{
     if(res.data.success){
       console.log(res.data)
      setName(res.data.staff.name);

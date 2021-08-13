@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { addNotice, updateNotice } from '../../actions/adminActions';
 import axios from 'axios';
 import {Redirect} from 'react-router-dom';
+import { serverurl } from '../../config';
 
 function Notice(props) {
     const [date, setDate] = useState("");
@@ -70,7 +71,7 @@ const handleUpdate = (e) => {
 const getNoticeDetails=()=>{
   const id =props.match.params.id;
 
-  axios.get(`/admin/notices/${id}`).then((res)=>{
+  axios.get(`${serverurl}/admin/notices/${id}`).then((res)=>{
     if(res.data.success){
       console.log(res.data)
       // setImage(res.data.user.image);

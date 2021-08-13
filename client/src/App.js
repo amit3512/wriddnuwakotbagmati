@@ -17,12 +17,7 @@ import GalleryBoard from "./components/Gallery/GalleryBoard";
 import EventsBoard from "./components/Gallery/EventBoard";
 import AllPhotos from "./components/Gallery/AllPhotos";
 
-function App() {
-
-  // const [navToggle,setNavToggle] = useState(false);    
-  //  const handleNavToggle=()=>{
-  //                  setNavToggle(!navToggle);
-  //  }  
+function App() {  
   return (
     <>
     {localStorage.getItem('userTokenTime')?(

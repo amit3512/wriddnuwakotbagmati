@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { serverurl } from "../../config";
 // import Header from "../components/Header";
 // import Modal from "react-modal";
 // import {Redirect} from "react-router-dom";
@@ -19,7 +20,7 @@ class EventBoard extends React.Component {
 
   async getEventBoard(){
     const id = this.props.match.params.id;
-    const event = await axios.get(`/admin/events/${id}`).then(res=>{
+    const event = await axios.get(`${serverurl}/admin/events/${id}`).then(res=>{
         return res.data.event;
     })
     console.log(event)

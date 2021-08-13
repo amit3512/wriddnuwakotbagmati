@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { addMessage, updateMessage } from '../../actions/adminActions';
 import axios from 'axios';
 import {Redirect} from 'react-router-dom';
+import { serverurl } from '../../config';
 
 
 function Message(props) {
@@ -43,7 +44,7 @@ const handleUpdate = (e) => {
 
 const getMessageDetails=()=>{
   const id =props.match.params.id;
-   axios.get(`/admin/messages/${id}`).then((res)=>{
+   axios.get(`${serverurl}/admin/messages/${id}`).then((res)=>{
     if(res.data.success){
       console.log(res.data)
       setName(res.data.message.name);

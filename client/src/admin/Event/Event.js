@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { addEvent, updateEvent } from '../../actions/adminActions';
 import axios from 'axios';
 import {Redirect} from 'react-router-dom';
+import { serverurl } from '../../config';
 
 function Notice(props) {
     const [date, setDate] = useState("");
@@ -50,7 +51,7 @@ const handleUpdate = (e) => {
 const getEventDetails=()=>{
   const id =props.match.params.id;
 
-  axios.get(`/admin/events/${id}`).then((res)=>{
+  axios.get(`${serverurl}/admin/events/${id}`).then((res)=>{
     if(res.data.success){
       console.log(res.data)
       setDate(res.data.event.date);

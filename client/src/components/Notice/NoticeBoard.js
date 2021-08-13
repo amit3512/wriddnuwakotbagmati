@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { serverurl } from "../../config";
 // import Header from "../components/Header";
 // import Modal from "react-modal";
 // import {Redirect} from "react-router-dom";
@@ -19,7 +20,7 @@ class NoticeBoard extends React.Component {
 
   async getNoticeBoaard(){
     const id = this.props.match.params.id;
-    const notice = await axios.get(`/admin/notices/${id}`).then(res=>{
+    const notice = await axios.get(`${serverurl}/admin/notices/${id}`).then(res=>{
         return res.data.notice;
     })
     console.log(notice)

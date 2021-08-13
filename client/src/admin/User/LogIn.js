@@ -3,6 +3,7 @@ import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 import Form from './form';
 import './form.css';
+import { serverurl } from '../../config';
 
 class SignIn extends React.Component {
   constructor(props) {
@@ -24,7 +25,7 @@ class SignIn extends React.Component {
     if (!(this.state.email === '' || this.state.password === '')
       && (/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.state.email))) {
         // (/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(this.state.email)))
-        axios.post('/admin/logIn', {
+        axios.post(`${serverurl}/admin/logIn`, {
         email: this.state.email,
         password: this.state.password
       }).then(res => {

@@ -3,9 +3,6 @@ import Message from "../components/Message";
 import NoticeSlice  from "../components/Notice/NoticeSlice";
 import EventSlice  from "../components/Event/EventSlice";
 import logo from '../images/staff.jpg';
-// import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, Move, MoveIn, MoveOut, Sticky, StickyIn, ZoomIn } from "react-scroll-motion";
-// const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
-// const FadeUp = batch(Fade(), Move(), Sticky());
 import Fade from 'react-reveal/Fade';
 
 function LandingPage() {
