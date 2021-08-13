@@ -1,0 +1,10 @@
+#login .container #login-row #login-column #login-box #login-form {
+  padding: 20px;
+  margin: auto;
+}
+
+#login-column {
+  box-shadow:  0 0 1em 2px rgb(184, 65, 65);
+  border-radius: 10px;
+  }
+

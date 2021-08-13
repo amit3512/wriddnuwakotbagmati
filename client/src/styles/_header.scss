@@ -1,0 +1,43 @@
+.Header{
+    margin-top: 10px;
+    .header-items{
+           .header-text{
+            line-height: 40%;
+            text-align: center;
+            color: crimson;
+                    p{
+                        font-size: 0.85em;
+                    }
+           }
+           .header-image{
+           
+            .logo1{
+                float: left;
+                margin-left: 50px;
+                width: 150px;
+                @media screen and (max-width: 1100px){
+                    display: none;
+                 }
+            }
+            .logo2{
+                float: right;
+                margin-right: 50px;
+                width: 100px;
+                @media screen and (max-width: 1100px){
+                    display: none;
+                 }
+                 @media screen and (max-width: 710px){
+                     display: none;
+                 }
+                 @media screen and (max-width: 300px){
+                     display: none;
+                 }
+            }
+           }
+    }
+ 
+    
+   
+   
+    
+}

@@ -1,0 +1,25 @@
+.Event{
+    margin-top: 20px;  
+}
+
+.eventBoard{
+    p{
+        text-align: justify;
+        table{
+                margin: auto;
+                tr:nth-child(even){background-color: #f2f2f2;}
+
+                tr:hover {background-color: #ddd;}
+                th{
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                }
+                td{
+                    border: 1px solid #ddd;
+                    padding: 8px;
+                }
+           
+        }
+    }
+    
+}

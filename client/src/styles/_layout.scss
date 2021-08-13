@@ -1,0 +1,185 @@
+.App{
+    // background-color: white;
+    color: black;
+  
+    .sidebar{
+        width: 16%;
+        height: 100vh;
+        background-color: hsl(18, 33%, 94%);
+        position: fixed;
+        z-index: 11;
+        border-right: 1px solid #2e344e;
+        transform-origin: left;
+        transition: all .4s ease-in-out;
+        transform: translateX(-100%);
+        @media screen and (max-width: 1000px){
+            
+            width: 20%;
+        }
+        @media only screen and (max-width: 300px){
+            width: 35%;
+        }
+        @media screen and (max-width: 411px){
+            width: 50%;
+        }
+        @media screen and (max-width: 600px){
+            width: 35%;
+        }
+        @media screen and (max-width: 700px){
+            width: 35%;
+        }
+        
+      
+    }
+    .nav-toggle{
+        z-index: 12;
+        transition: all .4s ease-in-out;
+        transform: translateX(0);
+    }
+    
+
+    .main-content{
+        width: 84%;
+        margin-left: 15%;
+        // margin-top: 15%;
+        // background-color: white;
+        min-height: 100vh;
+        // background-image: url(../img/dots.svg);
+        transition: 0.4s ease-in-out;
+        // display: grid;
+        // position: relative;
+        .content{
+            // margin: 2rem 15rem;
+            // @media screen and (max-width: 1100px){
+            //     margin: 2rem 10rem;
+            // }
+            // @media screen and (max-width: 1400px){
+            //     margin: 3rem 10rem;
+            // }
+            // @media screen and (max-width: 1400px){
+            //     margin: 3rem 10rem;
+            // }
+            // @media screen and (max-width: 710px){
+            //     margin: 2rem 3rem;
+            //     width: 70%;
+            // }
+            // @media screen and (max-width: 300px){
+            //     margin: 2rem 3rem;
+            //     width: 34%;
+            // }
+        }
+        // @media screen and (max-width: 1000px){
+        //     margin: 15em 3rem;
+        //     width: 100%;
+        // }
+    }
+}
+
+.main-content-full{
+    width: 100%;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.nav-btn{
+    position: fixed;
+    z-index: 12;
+    left: 1%;
+    top: 1%;
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    // transform: translateX(0);
+    .lines-1, .lines-2, .lines-3{
+        height: .1rem;
+        width: 40%;
+        background-color: #090a0adc;
+        pointer-events: none;
+        display: block;
+        border-radius: 150px;
+        &:not(:last-child){
+            margin-bottom: .4rem;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        display: block;
+        .lines-1, .lines-2, .lines-3{
+            display: block;
+        }
+    }
+    @media screen and (max-width: 800px){
+        
+      
+        .lines-1, .lines-2, .lines-3{
+            display: block;
+        }
+    }
+    @media screen and (max-width: 700px){
+        
+      
+        .lines-1, .lines-2, .lines-3{
+            display: block;
+        }
+    }
+}
+
+.nav-toggle-move {
+    transition: all .4s ease-in-out;
+    // transform: translateX(240px);
+    // @media screen and (max-width: 1000px){
+    //     transform: translateX(200px);
+    // }
+    // @media screen and (max-width: 800px){
+    //     transform: translateX(155px);
+    // }
+    // @media screen and (max-width: 710px){
+    //     transform: translateX(140px);
+    // }
+    // @media screen and (max-width: 410px){
+    //     transform: translateX(135px);
+    // }
+}
+   
+   
+
+
+.closePage{
+    float: right;
+    .hide-on-print{
+        position: relative;
+        button{
+                position: absolute;
+                right: 0;
+                bottom:10;
+                border-radius: 20%;
+                
+              h6{
+                  justify-content: center;
+              }
+          }
+    }
+}
+
+
+  @media print{
+      .hide-on-print{
+           display: none;
+      }
+
+      .show-on-print{
+        display: block;
+   }
+  }
+
+ 
+
+
+
+
+
+
+

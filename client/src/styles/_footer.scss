@@ -1,0 +1,31 @@
+.Footer{
+    margin-top:50px;
+    height: 40px;
+    .footer-items{
+        background-color: rgb(247, 243, 243);
+          .footer-text{
+            padding-top: 1.5em;
+            text-align: center;
+
+            h4{
+                color: red;
+            }
+
+            .footer-link{
+                text-align: justify;
+                    h5{
+                        color: darkslateblue;
+                        text-align: center;
+                    }
+                    a{
+                        text-decoration: none;
+                    }
+                    .staff-footer{
+                       text-align: center;
+                        
+                    }
+            }
+        }
+    }
+ }
+

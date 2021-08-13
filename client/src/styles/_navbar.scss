@@ -1,0 +1,53 @@
+.headerNav{
+    
+    a{
+        text-align: center;
+        position: relative;
+        display: flex;
+        &:hover{
+          z-index: 0;
+      }
+       &::before{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            transform: scaleY(2);
+            transition: 0.5s ease-in-out;
+            opacity: 0;    
+        }
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: brown;
+            transform: scale(0);
+            transition: 0.5s ease-in-out;
+            opacity: 0;    
+        }
+
+        &:hover::before{
+           transform:scaleY(1);
+            opacity: 1;
+        }
+        
+        &:hover::after{
+            transform:scale(1);
+             opacity: 1;
+             z-index: -1;
+         }
+
+         
+    }   
+}
+
+
+

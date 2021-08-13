@@ -1,0 +1,30 @@
+.Notice{
+    margin-top: 10px;  
+    marquee{
+        color:red;
+    }
+}
+
+.notice-board{
+    
+    p{
+        text-align: justify;
+        table{
+            margin: auto;
+          tr:nth-child(even){background-color: #f2f2f2;}
+
+          tr:hover {background-color: #ddd;}
+         th{
+            border: 1px solid #ddd;
+            padding: 8px;
+         }
+         td{
+            border: 1px solid #ddd;
+            padding: 8px;
+         }
+           
+        }
+    }
+   
+    
+}
