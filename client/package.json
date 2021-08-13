@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "homepage": "https://wriddnuwakot.bagmati.gov.np/frst-step",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
