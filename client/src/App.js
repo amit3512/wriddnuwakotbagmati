@@ -21,7 +21,7 @@ function App() {
   return (
     <>
     {localStorage.getItem('userTokenTime')?(
-      <div className="AdminPage">
+      <div className="adminpage">
         <AdminDashboard/>
       </div>
                       

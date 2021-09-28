@@ -52,7 +52,7 @@ if (staffs === undefined) {
                                         <tbody>
                                     
                                             <tr key={index+1}>
-                                            <td>{index+1}</td>
+                                            <td>{user.orderBy}</td>
                                             <td>{user.name}</td>
                                             <td>{user.designation}</td>
                                             <td>{user.phone}</td>

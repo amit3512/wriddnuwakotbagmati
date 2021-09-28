@@ -2,7 +2,7 @@ import Carousel from "../components/Carousel";
 import Message from "../components/Message";
 import NoticeSlice  from "../components/Notice/NoticeSlice";
 import EventSlice  from "../components/Event/EventSlice";
-import logo from '../images/staff.jpg';
+import logo from '../images/Head.jpg';
 import Fade from 'react-reveal/Fade';
 
 function LandingPage() {
@@ -10,7 +10,7 @@ function LandingPage() {
     <div className="container">
      <Carousel/>
      <Fade top>
-                    <div className="Message mt-5">
+                    <div className="Message mt-3">
                           <div className="card">
                                 <div className="text-center mt-2">
                               

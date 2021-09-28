@@ -2,6 +2,9 @@ import {useEffect} from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { getPhotoByTitle} from "../../actions/adminActions";
 import Fade from "react-reveal/Fade";
+import { Col, Image, Row } from 'antd';
+import 'antd/dist/antd.css';
+
 
 function Event(props) {
 
@@ -41,10 +44,10 @@ function Event(props) {
                                 )
                         }else{
                                 return(
-                            
-                                        <div className="row">
+                            <>
+                                         {/* <div className="row"> */}
                                             
-                                                {staff.image.map((img,index)=>
+                                                {/* {staff.image.map((img,index)=>
                                                         <div className="col-md-4">
                                                                     <div className="card-body">
                                                                             <Fade>
@@ -53,9 +56,19 @@ function Event(props) {
                                                                         
                                                                     </div>
                                                         </div>
+                                                )} */}
+                                <Row>
+                                        <Image.PreviewGroup>
+                                                {staff.image.map((img,index)=>
+                                                <Col span={6}>
+                                                        <Image  width={300} className="title-image" key={index} src={img} alt="title" />
+                                                </Col>
                                                 )}
-                                        </div>
-                                            
+                                        </Image.PreviewGroup>
+                                </Row>
+                                               
+                                         {/* </div> */}
+                                   </>         
                                 )
                         }
 

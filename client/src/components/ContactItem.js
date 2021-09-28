@@ -18,7 +18,7 @@ function ContactItem() {
                                                                <i className="fas fa-phone fa-2x"></i>
                                                                     <div className="right-items">
                                                                         <h4>Phone No.</h4>
-                                                                        <h6>+977 010-560909</h6>
+                                                                        <h6>010-560909</h6>
                                                                     </div>
                                                                 </div>
                                                                </div>
@@ -28,7 +28,7 @@ function ContactItem() {
                                                                 <i className="far fa-envelope fa-2x"></i>
                                                                     <div className="right-items">
                                                                         <h4>Email</h4>
-                                                                        <h6>+977 wreidd.nuwakot@gmail.com</h6>
+                                                                        <h6>wreidd.nuwakot@gmail.com</h6>
                                                                     </div>
                                                                 </div>
                                                                </div>

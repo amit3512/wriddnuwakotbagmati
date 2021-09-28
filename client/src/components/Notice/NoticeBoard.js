@@ -52,12 +52,8 @@ class NoticeBoard extends React.Component {
         <div>...Loading</div>
       ):(
                    <>
-                   {/* <Modal isOpen={true} onRequestClose={this.closeModal}> */}
-                  
-                                <div className="notice-board container">
-                                    {/* <div>
-                                            <Header/>
-                                    </div> */}
+                                <div className="container notice-board mt-3 bg-white">
+            
                                     <div>
                                             <p>०७८-{this.state.notices.date}</p>
                                             <h4 className="text-center py-3"><u>{this.state.notices.name}</u></h4>
@@ -66,8 +62,6 @@ class NoticeBoard extends React.Component {
                                     <button className="print-button"onClick={this.handlePrint}>print</button>
                                 </div>
                                
-                 
-                    {/* </Modal> */}
                   </>
           )}
       </div>

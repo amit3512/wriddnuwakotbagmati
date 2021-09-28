@@ -1,6 +1,6 @@
-import slider from '../images/pic.jpg';
-import slider1 from '../images/pic1.jpg';
-import slider2 from '../images/pic2.jpg';
+import slider from '../images/slide2.jpg';
+import slider1 from '../images/slide1.jpg';
+import slider2 from '../images/slide3.jpg';
 
 
 function Carousel() {

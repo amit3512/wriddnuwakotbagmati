@@ -4,11 +4,6 @@ import {NavLink} from 'react-router-dom';
 
 function NavBar(){
     
-//    const [navToggle,setNavToggle] = useState(false);    
-//    const handleDropdown=()=>{
-//                    setNavToggle(!navToggle);
-//    }  
-     
     return (
         <div className="NavBar">
             
@@ -39,16 +34,6 @@ function NavBar(){
                        <li className="nav-item">
                             <NavLink to="/admin/logOut" exact activeclassname="active"><span className="px-2"><i className="fas fa-sign-out-alt"/></span>Log Out</NavLink>
                        </li>
-                       {/* <li className="nav-item">
-                            <Link to="#"  onClick={handleDropdown}><span className="px-2"><i className="fas fa-file-alt"></i></span>Report</Link>
-                            <ol className={`${navToggle ? '': 'dropdown_content'}`}>
-                                 <li className="dropdownItem"> <NavLink to="/roomsReport" exact activeclassname="active">Room</NavLink></li>
-                                 <li className="dropdownItem"> <NavLink to="/report" exact activeclassname="active">Food/Rent</NavLink></li>
-                            </ol>
-                      </li> */}
-                      {/* <li className="nav-item">
-                            <NavLink to="/bankVouchers" exact activeclassname="active"><span className="px-2"><i className="fas fa-file-invoice"></i></span>Bank Vouchers</NavLink>
-                       </li> */}
                        
                    </ul>
                    

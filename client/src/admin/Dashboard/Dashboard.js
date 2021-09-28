@@ -16,30 +16,23 @@ import AdminLogOut from "../User/LogOut";
 
 
 function Dashboard() {
- const [navToggle,setnavToggle] =useState(false);
+ const [navToggle,setnavToggle] = useState(false);
 
  const navClick = () => {
    setnavToggle(!navToggle);
     }
-
-    // if (!localStorage.getItem('userTokenTime')) return <LogIn/>;
     
     return(
       
         <div className="App">
-         
-         
-        
-         <div className="hide-on-print">
+              <div className="hide-on-print">
                <div className={`sidebar ${navToggle ? 'nav-toggle': ''}`}>
                  <NavBar />
                </div>
-        </div>
+             </div>
          
-         
-        
-         <div className={`${navToggle ? 'main-content': 'main-content-full'}`}>
-           <div className="content">
+            <div className={`${navToggle ? 'main-content': 'main-content-full'}`}>
+                <div className="content">
         
                   <div className="text-center bg-light">
                   <div className={`${navToggle ? 'nav-btn nav-toggle-move': 'nav-btn'}`} onClick={navClick}>

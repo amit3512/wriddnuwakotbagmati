@@ -11,7 +11,7 @@ function Gallery() {
                                     <div className="card">
                                             <div className="card-body">
                                                 <p className="card-text">Event</p>
-                                                <a href="/gallery/Event" className="btn btn-primary">Go somewhere</a>
+                                                <a href="/gallery/Event" className="btn btn-primary">Visit</a>
                                             </div>
                                             
                                     </div>
@@ -21,7 +21,7 @@ function Gallery() {
                                     <div className="card">
                                             <div className="card-body">
                                                 <p className="card-text">Training</p>
-                                                <a href="/gallery/Training" className="btn btn-primary">Go somewhere</a>
+                                                <a href="/gallery/Training" className="btn btn-primary">Visit</a>
                                             </div>
                                             
                                     </div>
@@ -31,7 +31,7 @@ function Gallery() {
                                     <div className="card">
                                             <div className="card-body">
                                                 <p className="card-text">Office</p>
-                                                <a href="/gallery/Office" className="btn btn-primary">Go somewhere</a>
+                                                <a href="/gallery/Office" className="btn btn-primary">Visit</a>
                                             </div>
                                             
                                     </div>
@@ -40,7 +40,7 @@ function Gallery() {
                                     <div className="card">
                                             <div className="card-body">
                                                 <p className="card-text">Nagarik WadaPatra</p>
-                                                <a href="/gallery/Nagarik-WadaPatra" className="btn btn-primary">Go somewhere</a>
+                                                <a href="/gallery/Nagarik-WadaPatra" className="btn btn-primary">Visit</a>
                                             </div>
                                             
                                     </div>

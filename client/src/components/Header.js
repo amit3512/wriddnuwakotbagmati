@@ -1,4 +1,4 @@
-import logo from '../images/logo.jpg';
+import logo from '../images/logo.png';
 import logo1 from '../images/nepal-flag.gif';
 
 function Header() {

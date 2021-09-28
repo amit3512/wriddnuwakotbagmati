@@ -22,7 +22,7 @@ export const addStaff = (formData) => async (dispatch)=>{
 };
 
 export const getStaff = () => async (dispatch)=>{
-    const staffs = await axios.get("${serverurl}/admin/staffs").then(res=>{
+    const staffs = await axios.get(`${serverurl}/admin/staffs`).then(res=>{
       return res.data;
     })
    const data = staffs.staffs
@@ -251,7 +251,7 @@ export const updateMessage = (id,formData) => async (dispatch)=>{
       })
     } 
     else{
-       galleries = await axios.get('/admin/galleries').then(res=>{
+       galleries = await axios.get(`${serverurl}/admin/galleries`).then(res=>{
         return res.data;
       })
     }
