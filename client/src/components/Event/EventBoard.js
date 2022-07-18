@@ -6,74 +6,79 @@ import { serverurl } from "../../config";
 // import {Redirect} from "react-router-dom";
 
 class EventBoard extends React.Component {
-
-  constructor(props){
+  constructor(props) {
     super(props);
-    this.state={
-              events:[],
-              
-    }
-  };
-  componentDidMount(){
+    this.state = {
+      events: [],
+    };
+  }
+  componentDidMount() {
     this.getEventBoard();
   }
 
-  async getEventBoard(){
+  async getEventBoard() {
     const id = this.props.match.params.id;
-    const event = await axios.get(`${serverurl}/admin/events/${id}`).then(res=>{
+    const event = await axios
+      .get(`${serverurl}/admin/events/${id}`)
+      .then((res) => {
         return res.data.event;
-    })
-    console.log(event)
+      });
+    console.log(event);
     this.setState({
-        events:event
-    })
-    
+      events: event,
+    });
   }
- 
+
   openModal = (events) => {
     this.setState({ events });
   };
 
-  closeModal = () =>{
-    this.setState({ events:null });
-       (window.location.href="/event")
-  }
+  closeModal = () => {
+    this.setState({ events: null });
+    window.location.href = "/event";
+  };
 
-  handlePrint = () =>{
+  handlePrint = () => {
     window.print();
-  }
+  };
   // closeModal = () => {
   //   this.setState({ post:null });
   // };
-  render(){
-    return(
+  render() {
+    return (
       <div>
-      {!this.state.events?(
-        <div>...Loading</div>
-      ):(
-                   <>
-                   {/* <Modal isOpen={true} onRequestClose={this.closeModal}> */}
-                  
-                                <div className="eventBoard container">
-                                    {/* <div>
+        {!this.state.events ? (
+          <div>...Loading</div>
+        ) : (
+          <>
+            {/* <Modal isOpen={true} onRequestClose={this.closeModal}> */}
+
+            <div className="eventBoard container">
+              {/* <div>
                                             <Header/>
                                     </div> */}
-                                    <div className="bg-white">
-                                            <p>०७८-{this.state.events.date}</p>
-                                            <h4 className="text-center py-3"><u>{this.state.events.name}</u></h4>
-                                            <p dangerouslySetInnerHTML={{__html:this.state.events.description}}></p>
-                                    </div>
-                                    <button className="print-button"onClick={this.handlePrint}>print</button>
-                                </div>
-                               
-                 
-                    {/* </Modal> */}
-                  </>
-          )}
+              <div className="bg-white">
+                <p>{this.state.events.date}</p>
+                <h4 className="text-center py-3">
+                  <u>{this.state.events.name}</u>
+                </h4>
+                <p
+                  dangerouslySetInnerHTML={{
+                    __html: this.state.events.description,
+                  }}
+                ></p>
+              </div>
+              <button className="print-button" onClick={this.handlePrint}>
+                print
+              </button>
+            </div>
+
+            {/* </Modal> */}
+          </>
+        )}
       </div>
-    )
+    );
   }
 }
 
 export default EventBoard;
-

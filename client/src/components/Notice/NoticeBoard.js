@@ -53,7 +53,7 @@ class NoticeBoard extends React.Component {
           <>
             <div className="container notice-board mt-3 bg-white">
               <div>
-                <p>०७८-{this.state.notices.date}</p>
+                <p>{this.state.notices.date}</p>
                 <h4 className="text-center py-3">
                   <u>{this.state.notices.name}</u>
                 </h4>
