@@ -72,11 +72,17 @@ function Footer() {
             <div className="col-md-4 staff-footer">
               <h5>कार्यालय समय</h5>
               <hr />
-              <h6>
+              {/* <h6>
                 सोमबार - शुक्रबार : <p>9:30am - 5:30pm</p>
               </h6>
               <h6>
                 शनिबार र आइतबार : <p>सार्वजनिक बिदा </p>
+              </h6> */}
+              <h6>
+                आइतबार - शुक्रबार : <p>10:00am - 5:00pm</p>
+              </h6>
+              <h6>
+                शनिबार : <p>सार्वजनिक बिदा </p>
               </h6>
               <i className="fab fa-facebook" />
               <i className="fab fa-twitter" />
